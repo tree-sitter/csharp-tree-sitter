@@ -8,7 +8,7 @@
         "name": "test", "stopAtEntry": false,
         "type": "coreclr", "request": "launch", "preLaunchTask": "build", "console": "integratedTerminal",
         "program": "${workspaceFolder}/bin/Debug/net7.0/csharp-tree-sitter.dll", "cwd": "${workspaceFolder}",
-        "args": [ "-files", "G:/temp3/Astred/tests/easycpp/simple.cpp"],
+        "args": [ "-files", "path"],
         },
 ]
 }
