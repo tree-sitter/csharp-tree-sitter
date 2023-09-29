@@ -1,0 +1,3 @@
+LIBRARY TREE-SITTER-CPP
+EXPORTS
+        tree_sitter_cpp

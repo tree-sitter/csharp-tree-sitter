@@ -1,2 +1,4 @@
 # csharp-tree-sitter
-C# bindings to the Tree-sitter parsing library
+==================
+
+This module provides C# bindings to the [tree-sitter](https://github.com/tree-sitter/tree-sitter) parsing library.
