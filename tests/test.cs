@@ -54,6 +54,7 @@ namespace TreeSitterTest
                 } while (!cursor.goto_next_sibling());
             }
         }
+        
         public static bool ParseTree(string path, string filetext, TSParser parser)
         {
             parser.set_language(TestTreeSitterCPP.lang);
@@ -68,6 +69,7 @@ namespace TreeSitterTest
             PostOrderTraverse(path, filetext, cursor);
             return true;
         }
+        
         public static bool TraverseTree(string filename, string filetext)
         {
             using var parser = new TSParser();
@@ -85,10 +87,14 @@ namespace TreeSitterTest
             }
             return good;
         }
+        
         public static void PrintErrorAt(string path, string error, params Object[] args)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            if (Console.CursorLeft != 0) { Console.Error.WriteLine(); }
+            if (Console.CursorLeft != 0) { 
+                Console.Error.WriteLine(); 
+            }
+            
             Console.Error.WriteLine("{0}(): error {1}", path, String.Format(error, args));
             Console.ForegroundColor = Console.ForegroundColor;
         }
@@ -145,22 +151,23 @@ namespace TreeSitterTest
                         used.Add(filepath);
                     }
                 }
-
             }
-
-
+            
             return files;
         }
+        
         public static void Main(string[] args)
         {
             var files = (List<String>)null;
-              // Check if the args have at least two elements and the first one is "-files"
+            int a = 0;
+            
+            // Check if the args have at least two elements and the first one is "-files"
             if (args.Length < 2 || args[0] != "-files")
             {
                 Console.WriteLine("Invalid arguments. Please use -files followed by one or more file paths.");
                 return;
             }
-            int a = 0;
+            
             if ((files = ArgsToPaths(ref a, args)) != null) {
                 PrintTree(files);
             }   
