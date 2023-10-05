@@ -42,7 +42,7 @@ dotnet build src\csharp-tree-sitter.csproj
 
 # Demo
 
-A good demo is the following:
+A good demo is the following, it is a test written in c# which walks the AST tree in post order by calling tree-sitter-cpp parser through c# binding:
 
 ```cmd
 csharp-tree-sitter.exe -files [your test cpp files]
