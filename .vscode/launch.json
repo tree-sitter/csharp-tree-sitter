@@ -3,12 +3,20 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [        
+    "configurations": [
         {
-        "name": "test", "stopAtEntry": false,
-        "type": "coreclr", "request": "launch", "preLaunchTask": "build", "console": "integratedTerminal",
-        "program": "${workspaceFolder}/bin/Debug/net7.0/csharp-tree-sitter.dll", "cwd": "${workspaceFolder}",
-        "args": [ "-files", "path"],
+            "name": "test",
+            "stopAtEntry": false,
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "console": "integratedTerminal",
+            "program": "${workspaceFolder}/bin/Debug/net7.0/csharp-tree-sitter.dll",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "-files",
+                "path"
+            ],
         },
-]
+    ]
 }
