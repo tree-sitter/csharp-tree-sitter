@@ -6,7 +6,7 @@
 CFLAGS=/nologo /FC /Od /Z7 /Gy /diagnostics:column /Itree-sitter/lib/include
 LFLAGS=/def:$(@B).def /incremental:no /debug
 
-BIN=..\src\bin\debug\net7.0
+BIN=..\bin\debug\net7.0
 
 DLLS=\
 	$(BIN)/tree-sitter.dll \
