@@ -3,7 +3,7 @@
 #	Tree-Sitter Base and Common Language Parsers
 #
 
-CFLAGS=/nologo /FC /Od /Z7 /Gy /diagnostics:column /Itree-sitter/lib/include
+CFLAGS=/nologo /FC /Od /Z7 /Gy /diagnostics:column /Itree-sitter/lib/include /favor:INTEL64
 LFLAGS=/def:$(@B).def /incremental:no /debug
 
 BIN=..\src\bin\debug\net7.0
