@@ -43,6 +43,8 @@ EXPORTS
         ts_node_child_by_field_id
         ts_node_next_sibling
         ts_node_prev_sibling
+        ts_node_next_named_sibling
+        ts_node_prev_named_sibling
         ts_node_first_child_for_byte
         ts_node_first_named_child_for_byte
         ts_node_descendant_for_byte_range
